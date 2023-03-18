@@ -1,25 +1,29 @@
 <h1>About me</h1>
-I began my adventure in the world of IT, in 2006. I started with ERP system implementations and website development.
-
+I started my adventure in the IT world in 2006. I started with ERP system implementations and website development.
 The period from 2007 to 2019 was the time of providing IT outsourcing for small businesses.
 
-During this time, I provided complex services to small businesses. Among the services I provided were:
-- design and installation of local networks
-- configuring network devices (routers, switches, next generation firewalls
-- implementation and management of windows server
-- user identity management
-- solving current user problems.
+During this time I provided comprehensive services to small businesses. Among the services I provided were:
 
-In 2019, I started working at Atos Poland Global Services in the BDS department, in the position of Security Engineer in the IAM team.
+design and installation of local networks
+configuring network devices (routers, switches, new generation firewalls
+implementation and management of windows server
+user identity management
+solving current user problems.
+In 2019, I started working for Atos Poland Global Services in the BDS department, in the position of Security Engineer in the IAM team.
 
 Since 2020, I have been working with Makolab S.A. as DevOps/Support Engineer. There I am responsible for, among other things:
-- monitoring application performance.
-- resolving incidents from the L2/L3 level
-- close cooperation with development and QA teams in devops methodology
-- monitoring the Kubernetes cluster
-- application deployments using Jenkins
 
-Among the most interesting projects, I can count the preparation and implementation of AWS environment using CloudFormation, Terraform, Ansible and Jenkins.
+monitoring application performance.
+resolving incidents from the L2/L3 level
+close cooperation with development and QA teams in devops methodology
+monitoring Kubernetes cluster
+deployments of applications using Jenkins
+
+Among the most interesting projects I can count working for Beaconcure Ltd. In this project, I was responsible for preparing and deploying a full AWS infrastructure using CloudFormation, Terraform, Ansible and Jenkins.
+
+Previously, the client created its infrastructure using the AWS console, the specifics of the client required creating multiple AWS accounts and configuring identical and repeatable infrastructure on them. It took several weeks to create and test the manually configured infrastructure. Using my scripts shortened this process to a few hours.
+
+The same client also expected to implement infrastructure and application monitoring. As part of this project, I implemented Zabbix monitoring and ELK stack with elasticsearch and kibana.
 
 
 <h3 align="left">Connect with me:</h3>
