@@ -1,47 +1,49 @@
 # DevOps / AWS / Terraform / FinOps
 
-I clean up messy AWS environments, reduce cloud costs and bring infrastructure back under control.
+Porządkuję środowiska AWS, redukuję koszty chmury i przywracam kontrolę nad infrastrukturą.
 
-## What I do
-- AWS cost optimization (non-prod cleanup, waste reduction)
-- Terraform / CloudFormation cleanup and standardization
-- CI/CD troubleshooting (Jenkins, GitHub Actions)
-- ECS / Kubernetes debugging and stabilization
-- fixing environments that “somehow work but nobody knows how”
+---
 
-## Typical problems I solve
-- AWS bill growing without clear reason
-- multiple environments (dev/qa/uat/prod) without control
-- broken or unreliable deployments
-- Terraform repo that nobody wants to touch
-- infrastructure created manually in AWS console
+## Co robię
 
-## Fast services
-- AWS cost review (1–2h, paid session)
-- Terraform / CI/CD review (1–2h, paid session)
-- DevOps troubleshooting session (1–3h, paid session)
-  
-Most issues can be identified in a single session.
+- Optymalizacja kosztów AWS — identyfikacja i eliminacja marnotrawstwa (non-prod, idle resources, NAT Gateway, transfer danych)
+- Terraform — porządkowanie, standaryzacja modułów, naprawa state management
+- CI/CD — diagnoza i optymalizacja pipeline'ów (GitHub Actions, Jenkins)
+- ECS / Kubernetes — debugging, stabilizacja, środowiska produkcyjne
+- Naprawiam środowiska które „jakoś działają, ale nikt nie wie jak"
 
-## Example outcomes
-- reduced AWS costs by removing unused environments
-- standardized infrastructure across projects
-- stabilized ECS-based deployments
-- introduced basic IaC and environment structure
+## Typowe problemy które rozwiązuję
 
-## Tech
-AWS · Terraform · CloudFormation · ECS · Kubernetes · GitHub Actions · Jenkins
+- Rachunek AWS rośnie bez wyraźnego powodu
+- Wiele środowisk (dev/qa/uat/prod) bez kontroli kosztów i bez tagowania
+- Deployment niestabilny lub zajmuje 40+ minut
+- Terraform repo którego nikt nie chce tykać
+- Infrastruktura stawiana ręcznie z konsoli AWS
 
-## Experience
-- supported AWS partner competency initiatives (infrastructure, standards, evidence)
-- worked on production AWS environments (ECS, RDS, multi-environment setups)
+## Przykłady wyników
 
-## Credentials
+- Redukcja rachunku AWS o ~$4 200/miesiąc — konsolidacja NAT Gateway, VPC endpoints, wyłączenie Multi-AZ na dev
+- Pipeline skrócony z 45 do 9 minut — BuildKit cache, równoległe testy, cache zależności
+- Wdrożenie S3 backend + DynamoDB locking + osobny state per środowisko — koniec z korupcją stanu i blokowaniem zespołu
+
+## Technologie
+
+AWS · Terraform · ECS · EKS · RDS · GitHub Actions · Jenkins · ArgoCD · CloudFormation · Python
+
+## Certyfikaty
+
 - AWS Certified Solutions Architect – Associate
-- AWS Certified CloudOps Engineer – Associate (in progress)
-  
-If this looks familiar — reach out. I usually start with a short paid session.
 
-## Contact
-- LinkedIn: https://www.linkedin.com/in/jarekgolab/
-- Email: jarek@golab.info.pl
+## Doświadczenie
+
+Pracowałem nad produkcyjnymi środowiskami AWS (ECS, RDS, multi-environment, multi-account).
+Przeprowadzałem projekty przez AWS Partner Competency — od gap analysis, przez dokumentację case studies, po review techniczny.
+
+---
+
+## Kontakt
+
+Zazwyczaj zaczynam od krótkiej płatnej sesji diagnostycznej (1–2h) — na koniec wiesz dokładnie co i w jakiej kolejności poprawić.
+
+**LinkedIn:** [linkedin.com/in/jarekgolab](https://www.linkedin.com/in/jarekgolab/)
+**Email:** jarek@golab.info.pl
