@@ -1,49 +1,59 @@
-# DevOps / AWS / Terraform / FinOps
+# Jarosław Gołąb
 
-Porządkuję środowiska AWS, redukuję koszty chmury i przywracam kontrolę nad infrastrukturą.
+Platform Engineer focused on AWS governance, infrastructure automation and delivery platforms.
 
----
+I work mostly with production AWS environments: multi-account organizations, infrastructure as code, and the CI/CD platforms teams ship through. Most of what I do sits where infrastructure meets operational reality - making environments predictable, governed, and cheaper to run without breaking what already works.
 
-## Co robię
+AWS is my primary platform. The same governance, automation and operational principles often transfer across cloud environments. Around 20 years in IT, the last several focused on platform engineering and cloud operations.
 
-- Optymalizacja kosztów AWS — identyfikacja i eliminacja marnotrawstwa (non-prod, idle resources, NAT Gateway, transfer danych)
-- Terraform — porządkowanie, standaryzacja modułów, naprawa state management
-- CI/CD — diagnoza i optymalizacja pipeline'ów (GitHub Actions, Jenkins)
-- ECS / Kubernetes — debugging, stabilizacja, środowiska produkcyjne
-- Naprawiam środowiska które „jakoś działają, ale nikt nie wie jak"
+## Learn more
 
-## Typowe problemy które rozwiązuję
-
-- Rachunek AWS rośnie bez wyraźnego powodu
-- Wiele środowisk (dev/qa/uat/prod) bez kontroli kosztów i bez tagowania
-- Deployment niestabilny lub zajmuje 40+ minut
-- Terraform repo którego nikt nie chce tykać
-- Infrastruktura stawiana ręcznie z konsoli AWS
-
-## Przykłady wyników
-
-- Redukcja rachunku AWS o ~$4 200/miesiąc — konsolidacja NAT Gateway, VPC endpoints, wyłączenie Multi-AZ na dev
-- Pipeline skrócony z 45 do 9 minut — BuildKit cache, równoległe testy, cache zależności
-- Wdrożenie S3 backend + DynamoDB locking + osobny state per środowisko — koniec z korupcją stanu i blokowaniem zespołu
-
-## Technologie
-
-AWS · Terraform · ECS · EKS · RDS · GitHub Actions · Jenkins · ArgoCD · CloudFormation · Python
-
-## Certyfikaty
-
-- AWS Certified Solutions Architect – Associate
-
-## Doświadczenie
-
-Pracowałem nad produkcyjnymi środowiskami AWS (ECS, RDS, multi-environment, multi-account).
-Przeprowadzałem projekty przez AWS Partner Competency — od gap analysis, przez dokumentację case studies, po review techniczny.
+[twoje.it](https://twoje.it)
 
 ---
 
-## Kontakt
+## What I Work On
 
-Zazwyczaj zaczynam od krótkiej płatnej sesji diagnostycznej (1–2h) — na koniec wiesz dokładnie co i w jakiej kolejności poprawić.
+### Cloud Governance
+`AWS Organizations` `Service Control Policies` `Tag Policies` `Security Hub` `GuardDuty` `AWS Config`
 
-**LinkedIn:** [linkedin.com/in/jarekgolab](https://www.linkedin.com/in/jarekgolab/)
-**Email:** jarek@golab.info.pl
+### Platform Engineering
+`Terraform` `Infrastructure as Code` `CI/CD platforms` `ECS` `EKS` `Developer Enablement`
+
+### Cloud Cost Optimization
+`FinOps` `Rightsizing` `Architecture Reviews` `Cost Visibility`
+
+---
+
+## Selected Work
+
+### AWS Governance Rollout
+Took AWS Tag Policies in a multi-account Organization from defined-but-inactive to live in report mode, with enforcement blockers brought from 98 to 0. Every blocker was fixed at the infrastructure-code source so it survives the next apply, and harder enforcement was deliberately kept as a separate later decision after an earlier premature attempt had caused a production outage.
+
+### Disaster Recovery, Measured
+A platform's disaster-recovery environment is rebuilt from zero on Kubernetes. Rather than assume it would recover, I measured the cold start stage by stage and found the critical path gated by a single relational database - until it answered, the application crash-looped, and the data import alone was 53% of the rebuild time. The remediation (snapshot boot versus in-place import tuning, each with its own cost) is designed and not yet shipped, so I treat the 53% as a measured baseline, not a result.
+
+### Cloud Cost Optimization
+Reduced AWS spend by removing waste instead of capping usage: NAT Gateway consolidation, VPC endpoints to cut data-transfer cost, and trimming non-production redundancy such as idle resources and unnecessary Multi-AZ on non-prod. Paired with tagging and cost visibility so the savings stay observable over time.
+
+---
+
+## Certifications
+
+- AWS Certified Solutions Architect - Associate
+
+_(more in progress)_
+
+---
+
+## Technologies
+
+`AWS` `Terraform` `ECS` `EKS` `RDS` `GitHub Actions` `Jenkins` `ArgoCD` `CloudFormation` `Python`
+
+---
+
+## Contact
+
+- Website: https://twoje.it
+- LinkedIn: https://linkedin.com/in/jarekgolab
+- Email: jaroslaw.golab@twoje.it
